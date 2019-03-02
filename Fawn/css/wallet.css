@@ -1,0 +1,241 @@
+/*---------默认-----------*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+	list-style: none;
+}
+
+.small_box a {
+	color: black;
+}
+
+html {
+	background-color: white;
+}
+
+
+/*---------大盒子---------*/
+
+.wallet_content {
+	background-color: #F4F4F4;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+
+/*---------头部------------*/
+
+.header {
+	position: absolute;
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	height: 68px;
+	display: flex;
+	background-color: white;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.header_left {
+	display: left;
+	width: 20%;
+	height: 55px;
+}
+
+.header_left img {
+	width: 25px;
+	height: 25px;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+.header_right {
+	width: 80%;
+	height: 55px;
+	margin-right: 8%;
+}
+
+.mui_title {
+	width: 121px;
+	color: #5d3e2c;
+	font-size: 15px;
+	margin: 0 auto;
+	margin-top: 18px;
+}
+
+.mui_title_two {
+	width: 50px;
+	color: #5d3e2c;
+	font-size: 12px;
+	margin: 0 auto;
+	margin-top: 6px;
+	font-family: "YouYuan";
+	margin-left: 36%;
+}
+
+.log_logo {
+	width: 96%;
+	height: 40px;
+	margin-left: 2%;
+	margin-top: 88px;
+}
+
+.login_box img {
+	width: 20px;
+	height: 20px;
+}
+
+.log_logo img {
+	width: 40px;
+	height: 40px;
+	margin-left: 45%;
+}
+
+
+/*------------中部------------*/
+
+.money_top {
+	width: 100%;
+	height: 140px;
+	background-color: white;
+	margin-top: 64px;
+}
+
+.money {
+	width: 90%;
+	height: 100px;
+	margin-left: 5%;
+	margin-top: 5px;
+	border-radius: 12px;
+	background: radial-gradient(#FDF8EF, #FEE7BE);
+	/*background-color: #FEE7BE;*/
+}
+
+.money .span1 {
+	display: inline-block;
+	margin-left: 120px;
+	margin-top: 30px;
+	font-size: 13px;
+}
+
+.money .span2 {
+	font-size: 21px;
+}
+
+.money p {
+	font-size: 12px;
+	margin-left: 150px;
+	margin-top: 4px;
+	color: black;
+	opacity: 0.8;
+}
+
+.geduan1 {
+	width: 100%;
+	height: 10px;
+	background-color: #F4F4F4;
+	margin-top: 5px;
+}
+
+.geduan2 {
+	width: 100%;
+	height: 15px;
+	background-color: #F4F4F4;
+	/*margin-top: 20px;*/
+}
+
+
+/*---------轮播图----------*/
+
+.layui-carousel>[carousel-item] {
+	position: relative;
+	width: 100%;
+	height: 19% !important;
+	overflow: hidden;
+}
+
+.layui-btn,
+.layui-edge,
+.layui-inline,
+img {
+	vertical-align: middle;
+	height: 100%;
+	width: 50%;
+}
+
+.mui-slider-indicator {
+	position: absolute;
+	bottom: 3px;
+	width: 65%;
+	text-align: center;
+	background: 0 0;
+}
+
+
+
+
+.bottom {
+	width: 100%;
+	height: 202px;
+	background-color: white;
+}
+
+.p6 {
+	display: inline-block;
+	color: black;
+	font-size: 12px;
+	margin-left: 18px;
+	margin-top: 10px;
+}
+
+.bottom ul {
+	display: inline-block;
+	width: 80%;
+	height: 152px;
+	margin-top: 20px;
+	margin-left: 10%;
+}
+
+.bottom ul li:first-child {
+	margin-left: 0px !important;
+}
+
+.bottom ul li:nth-child(5) {
+	
+	margin-left: 0px !important;
+	
+}
+
+.bottom ul li {
+	/*flex: 10;*/
+	display: inline-block;
+	width: 61px;
+	height: 65px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.bottom ul li img {
+	display: block;
+	width: 27px;
+	height: 27px;
+	margin: 0 auto;
+}
+
+.bottom ul li p {
+	display: block;
+	font-size: 10px !important;
+	color: black;
+	margin-top: 8px;
+	text-align: center;
+}

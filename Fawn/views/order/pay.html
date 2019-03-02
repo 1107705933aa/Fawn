@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/pay.css" />
+		<link rel="stylesheet" href="/layui/css/layui.css">
+	</head>
+
+	<body>
+		<div class="back_content">
+			<!--头部-->
+			<div class="header">
+				<div class="header_left">
+					<a href="/order_successin"><img src="../../img/home/back.png" alt="" /></a>
+				</div>
+				<div class="header_right">
+					<div class="mui_title" style="font-weight: 700; font-family: " STSong ";">— 支 · 付 —</div>
+					<div class="mui_title_two" style="font-weight: 200;">P a y</div>
+				</div>
+			</div>
+
+			<!--中部-->
+			<div class="cid" style=""><%=r[0].id %></div>
+			<div style="width: 100%; height: 96px;background-color: #FCB71F;"></div>
+			<img class="img1" src="../../img/order/girl.png" alt="" /><span class="span1" style="font-weight: 700;"><%=r[0].user %></span>
+			<div class="hui_hid" style="display: inline-block; width:18%;margin-left: 18%;">
+				<img class="img2" src="../../img/order/huiyuan.png" alt="" />
+				<span class="hui" style="font-size: 10px; color: #90908F;">会员</span>
+			</div>
+			<div class="content1">
+				<span style="color: #9F9F9F;">订餐日期：</span><span style="color: #C4C3C3;"><%=r[0].order_time?new Date(r[0].order_time).toLocaleString():"" %></span>
+			</div>
+			<div class="content2">
+				<span style="color: #9F9F9F;">桌　　号：</span><span style="color: #C4C3C3;"><%=r[0].order_table %></span>
+			</div>
+
+			<div style="width: 100%; height: 66px;"></div>
+
+			<div class="content1">
+				<span style="color: #9F9F9F;">总　　价：</span><span class="yuan_price" style="color: #C4C3C3;"><%=r[0].zong_price %>&nbsp;</span><span style="color: #C4C3C3;">元</span>
+			</div>
+			<div class="content2">
+				<span style="color: #9F9F9F;">折&nbsp;&nbsp;扣&nbsp;&nbsp;价：</span><span class="zhekou" style="color: #C4C3C3;"></span></span><span style="color: #C4C3C3;">&nbsp;元</span>
+			</div>
+
+			<a class="fu" href="/payin/update_zhe?id=<%=r[0].id %>&zong_price=<%=r[0].zong_price %>">付账</a>
+
+		</div>
+		<script src="/layui/layui.all.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js "></script>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/pay.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

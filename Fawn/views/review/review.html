@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/review.css" />
+		<link rel="stylesheet" href="/layui/css/layui.css">
+	</head>
+
+	<body>
+		<div class="review_content">
+			<!--头部-->
+			<div class="header">
+				<div class="header_left">
+					<a href="javascript:history.go(-1)"><img src="../../img/home/back.png" alt="" /></a>
+				</div>
+				<div class="header_right">
+					<div class="mui_title" style="font-weight: 700; font-family: " STSong ";">— 评 · 价 —</div>
+					<div class="mui_title_two" style="font-weight: 200;">Review</div>
+				</div>
+			</div>
+
+			<!--中部-->
+			<ul class="mui-table-view zhong">
+				<%review.forEach(function (review) {%>
+				<li class="mui-table-view-cell mui-media">
+				<a href="#" class="delc" style="float: right;width: 10px;height: 10px;  margin-right: -14px;" data-id="<%= review.id%>" ><img style="float: right;margin-right: -10px;" class="delc" data-id="<%= review.id%>" src="../../img/order/del.png" /></a>			
+					<a href="javascript:;" style="display: block;">
+						<img class="mui-media-object mui-pull-left" src="<%=review.head %>">
+						<div class="mui-media-body" style="font-size: 15px;">
+							<%=review.name %>
+							<p class='mui-ellipsis' style="font-size: 12px;">评分：<%=review.branch %> 颗 <img style="width: 18px;height: 18px; line-height: 20px; position: absolute;top: 1px; " src="../../img/review/review.png"/></p>
+							<p class='mui-ellipsis' style="width: 268px; font-size: 13px; padding-right: -10px !important;"><%=review.content %></p>
+						</div>
+					</a>
+				</li>
+				<%})%>
+				<!--<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="../../img/breakfast/coffee/cappuccino.jpg">
+						<div class="mui-media-body">
+							木屋
+							<p class='mui-ellipsis' style="font-size: 13px;">评分：</p>
+							<p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="../../img/breakfast/coffee/latte.jpg">
+						<div class="mui-media-body">
+							CBD
+							<p class='mui-ellipsis' style="font-size: 13px;">评分：</p>
+							<p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+						</div>
+					</a>
+				</li>-->
+			</ul>
+			<!--<div class="geduan" style="width: 100%;height: 20px;"></div>-->
+
+		</div>
+        <script src="/layui/layui.all.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js "></script>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/review.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

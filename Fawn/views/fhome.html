@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/home.css" />
+	</head>
+
+	<body>
+		<div class="content">
+			<!--home页面-->
+			<div class="home_content">
+				<!--头部-->
+				<div class="header">
+					<div class="header_left">
+
+					</div>
+					<div class="header_right">
+						<div class="mui_title" style="font-weight: 700; font-family: " STSong ";">— 小鹿 ·下单 —</div>
+						<div class="mui_title_two" style="font-weight: 200;">F A W N</div>
+					</div>
+				</div>
+
+				<!--搜索框-->
+				<!--<div class="nav_box">
+					<div class="nav">
+						<input type="" class="search" placeholder="搜索">
+						<img class="search_icon" src="../img/home/search.png" alt="" />
+						<div class="shelter">
+							<a href="" style="color: #5d3e2c;">清空</a>
+						</div>
+					</div>
+				</div>-->
+
+				<!--中部-->
+				<!--轮播图-->
+				<div class="big_box">
+					<div class="mui-slider">
+						<div class="mui-slider-group mui-slider-loop">
+							<!--支持循环，需要重复图片节点-->
+							<div class="mui-slider-item mui-slider-item-duplicate">
+								<a href="#"><img src="../img/lunbotu/lunbotu5.jpg" /></a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#"><img src="../img/lunbotu/lunbotu1.jpg" /></a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#"><img src="../img/lunbotu/lunbotu2.jpg" /></a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#"><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=462711364,3235688849&fm=26&gp=0.jpg" /></a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#"><img src="../img/lunbotu/lunbotu4.jpg" /></a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#"><img src="../img/lunbotu/lunbotu5.jpg" /></a>
+							</div>
+							<!--支持循环，需要重复图片节点-->
+							<div class="mui-slider-item mui-slider-item-duplicate">
+								<a href="#"><img src="../img/lunbotu/lunbotu1.jpg" /></a>
+							</div>
+						</div>
+						<div class="mui-slider-indicator mui-text-right" style="margin: 0 auto;">
+							<div class="mui-indicator mui-active"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+						</div>
+					</div>
+				</div>
+				<!--菜单-->
+				<div class="big_box_two">
+					<div class="a_group_first">
+						<a href="/breakfastin">营养早餐</a>
+						<a href="/lunchin">美味午餐</a>
+						<a href="/dinnerin">丰盛晚餐</a>
+						<a href="/night_snackin">馋猫宵夜</a>
+					</div>
+					<div class="a_group_second">
+						<a href="/dessertin">精美甜品</a>
+						<a href="/drinkin">可口饮品</a>
+						<a href="/fruitsin">脆甜水果</a>
+						<a href="/snackin">美味小吃</a>
+					</div>
+				</div>
+
+				<!--横线-->
+				<div class="line"></div>
+
+				<!--优惠专区-->
+				<div class="recommend1">
+					<div class="discount" style="font-weight: 500; ">优惠专区</div>
+					<div class="recommend_first" >
+						<div class="recommend_box_first">
+							<a href="/dessertin/query?id=<%=r[24].id %>">
+								<img src="<%=r[24].food_pic %>" alt="" />
+							</a>
+							<span class="span_first" style="font-weight: 800;"><%=r[24].food_name %></span>
+							<span class="span_second">【味道鲜,色泽美】</span>
+						</div>
+						<div class="recommend_box_first" style="margin-right: 2%">
+							<a href="/dessertin/query?id=<%=r[25].id %>">
+								<img src="<%=r[25].food_pic %>" alt="" />
+							</a>
+							<span class="span_third" style="font-weight: 800; ;"><%=r[25].food_name %></span>
+							<span class="span_fourth">【清凉爽，解燥热】</span>
+						</div>
+						<div class="recommend_box_first">
+							<a href="/dessertin/query?id=<%=r[26].id %>">
+								<img src="<%=r[26].food_pic %>" alt="" />
+							</a>
+							<span class="span_third" style="font-weight: 800;"><%=r[26].food_name %></span>
+							<span class="span_fourth">【食材好，味道鲜】</span>
+						</div>
+						
+					</div>
+				</div>
+				<!--横线-->
+				<div class="line" style="margin-top: 25px;"></div>
+
+				<!--为您推荐-->
+				<div class="recommend2">
+					<div class="discount">为您推荐</div>
+					<div class="recommend_first">
+						<div class="recommend_box_first">
+							<a href="/dessertin/query?id=<%=r[27].id %>">
+								<img src="<%=r[27].food_pic %>" alt="" />
+							</a>
+							<span class="span_first" style="font-weight: 800;"><%=r[27].food_name %></span>
+							<span class="span_second">【爱清新，一抹甜】</span>
+						</div>
+						<div class="recommend_box_first" style="margin-right: 2%">
+							<a href="/dessertin/query?id=<%=r[28].id %>">
+								<img src="<%=r[28].food_pic %>" alt="" />
+							</a>
+							<span class="span_third" style="font-weight: 800;"><%=r[29].food_name %></span>
+							<span class="span_fourth">【色泽浓，味道鲜】</span>
+						</div>
+						<div class="recommend_box_first">
+							<a href="/dessertin/query?id=<%=r[29].id %>">
+								<img src="<%=r[29].food_pic %>" alt="" />
+							</a>
+							<span class="span_third" style="font-weight: 800;"><%=r[29].food_name %></span>
+							<span class="span_fourth">【物美，值得拥有】</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--尾部-->
+			<div class="bottom" style="background-color: #fcfcfc; border: 1px solid #e7e7e7;">
+				<div class="bottom_first">
+					<img src="../img/home/home.png" alt="" />
+					<p>
+						<a href="/homein/f" style="color: black; opacity: 0.95;">首页</a>
+					<p>
+				</div>
+				<div class="bottom_second">
+					<img src="../img/home/order_gray.png" alt="" />
+					<p>
+						<a href="/order_successin" style="color: #898989; opacity: 0.95;">订单</a>
+					</p>
+				</div>
+				<div class="bottom_third">
+					<img src="../img/home/my_gray.png" alt="" />
+					<p>
+						<a href="/myin/f" style="color: #898989; opacity: 0.95;">我的</a>
+					</p>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/home.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

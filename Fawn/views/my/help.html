@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/help.css" />
+		<link rel="stylesheet" href="/layui/css/layui.css">
+	</head>
+
+	<body>
+		<div class="help_content">
+			<!--头部-->
+			<div class="header">
+				<div class="header_left">
+					<a href="javascript:history.go(-1)"><img src="../../img/home/back.png" alt="" /></a>
+				</div>
+				<div class="header_right">
+					<div class="mui_title" style="font-weight: 700; font-family: " STSong ";">— 帮 · 助 —</div>
+					<div class="mui_title_two" style="font-weight: 200;">Help</div>
+				</div>
+			</div>
+
+			<!--中部-->
+			<!--手风琴效果-->
+			<div style="width: 100%;height:68px;"></div>
+			<div class="layui-collapse" lay-accordion>
+				<div class="layui-colla-item">
+					<h2 class="layui-colla-title">支付问题</h2>
+					<div class="layui-colla-content layui-show">
+						<p style="color: black; opacity: 0.7;">Q:&nbsp;&nbsp;支付金额来自哪里？</p>
+						<p style="font-size: 12px;">由用户自己到商家那里进行充值，或者到店付款；</p>
+					</div>
+				</div>
+				<div class="layui-colla-item">
+					<h2 class="layui-colla-title">订单问题</h2>
+					<div class="layui-colla-content layui-show">
+						<p style="color: black; opacity: 0.7;">Q:&nbsp;&nbsp;怎么取消订单？</p>
+						<p style="font-size: 12px;">用户拨打商家电话进行取消；</p>
+					</div>
+				</div>
+				<div class="layui-colla-item">
+					<h2 class="layui-colla-title">优惠问题</h2>
+					<div class="layui-colla-content layui-show">
+						<p style="color: black; opacity: 0.7;">Q:&nbsp;&nbsp;商家给予什么优惠？</p>
+						<p style="font-size: 12px;">办理会员会享有九折优惠；</p>
+					</div>
+				</div>
+				<div class="layui-colla-item">
+					<h2 class="layui-colla-title">其他问题</h2>
+					<div class="layui-colla-content layui-show">
+						<p style="color: black; opacity: 0.7;">Q:&nbsp;&nbsp;如果对商家不满意，如何投诉？</p>
+						<p style="font-size: 12px;">用户可以拨打客服电话（110或119）；</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script src="/layui/layui.all.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js "></script>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/help.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

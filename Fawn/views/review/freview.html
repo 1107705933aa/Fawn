@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/layui/css/layui.css">
+		<link rel="stylesheet" type="text/css" href="../../css/freview.css" />
+	</head>
+
+	<body>
+		<div class="freview_content">
+			<!--头部-->
+			<div class="header">
+				<div class="header_left">
+					<a href="javascript:history.go(-1)"><img src="../../img/home/back.png" alt="" /></a>
+				</div>
+				<div class="header_right">
+					<div class="mui_title" style="font-weight: 700; font-family: " STSong ";">— 评 · 价 —</div>
+					<div class="mui_title_two" style="font-weight: 200;">Review</div>
+				</div>
+			</div>
+
+			<div class="geduan" style="width: 100%; height: 140px;"></div>
+			<!--中部-->
+			<div style="width: 92%;height: 390px; left: 4%; background-color: #ee9065; opacity: 0.09; top: 120px; position: absolute;"></div>
+			<form class="layui-form" action="">
+				<!--<div class="layui-form-item">
+					<label class="layui-form-label">头      像</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" required lay-verify="required" placeholder="请选择头像" autocomplete="off" class="layui-input">
+					</div>
+				</div>-->
+
+				<div class="layui-form-item">
+					<label class="layui-form-label" style="position: absolute;top: 160px;">头  像</label>
+					<div class="layui-input-inline">
+						<label class="dhead" for="head">
+                        <img style="width: 60px; height: 60px; border-radius: 50px;" src="../../img/log/log.png" alt=""  id="showimg" >
+                    </label>
+						<input type="file" name="head" id="head" style="display:none">
+						<!--<input type="hidden" name="myhead" value="../../img/log/log.png">-->
+					</div>
+					<div class="layui-form-mid layui-word-aux H"></div>
+				</div>
+
+				<div class="layui-form-item">
+					<label class="layui-form-label">网    名</label>
+					<div class="layui-input-block">
+						<input type="text" name="wangname" required lay-verify="required" placeholder="请输入网名" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">评  星</label>
+					<div class="layui-input-block">
+						<select class="star" name="star" lay-verify="required">
+							<option value=""></option>
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-form-item layui-form-text">
+					<label class="layui-form-label">评  论</label>
+					<div class="layui-input-block">
+						<textarea name="view" placeholder="请输入内容" class="layui-textarea"></textarea>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<button class="layui-btn adduser" lay-filter="formDemo">立即提交</button>
+						<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="/layui/layui.all.js"></script>
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js "></script>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/freview.js"></script>
+		<script type="text/javascript">
+			layui.use('form', function() {
+				var form = layui.form;
+
+				//监听提交
+				form.on('submit(formDemo)', function(data) {
+					layer.msg(JSON.stringify(data.field));
+					return false;
+				});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--<link href="../../css/mui.min.css" rel="stylesheet" />-->
+		<link rel="stylesheet" href="/layui/css/layui.css">
+		<link rel="stylesheet" type="text/css" href="../../css/order_success.css" />
+		<style type="text/css">
+			.layui-layer {
+				z-index: 19891016 !important;
+				width: 244px !important;
+				height: 145px !important;
+				top: 140px !important;
+				left: -120px !important;
+				margin-left: 50% !important;
+				margin-top: 99px !important;
+			}
+			
+			#test:active {
+				color: white;
+			}
+			
+			.layui-layer-btn {
+				text-align: right;
+				padding: 0 15px 12px;
+				pointer-events: auto;
+				user-select: none;
+				-webkit-user-select: none;
+				margin-top: -11px !important;
+				s
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="success_content">
+			<!--头部-->
+			<div class="header">
+				<div class="header_left">
+					<a href="/homein/f"><img src="../../img/home/back.png" alt="" /></a>
+				</div>
+				<div class="header_right">
+					<div class="mui_title" style="font-weight: 700; font-family: " STSong ";">— 订 · 单 —</div>
+					<div class="mui_title_two" style="font-weight: 200;">Order</div>
+				</div>
+			</div>
+			<div class="ding" style="width: 100%;height: 52px;"></div>
+
+			<!--中部-->
+			<div style="width: 100%; height: 20px;"></div>
+			<!--购买-->
+			<div class="zhong">
+				<% r.forEach(function (r) { %>
+
+				<!--订桌-->
+				<div class="dingzhuo">
+					<div style="display: flex;width: 100%;">
+						&nbsp;<span style="font-size: 15px;" class="dingdan"><%=r.order_name %></span><span class="username">&nbsp;&nbsp;<<%=r.user %>></span>　&nbsp;&nbsp; &nbsp;
+						<span style="font-size: 15px;">桌号：<%=r.order_table %></span>　&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class="if_fu" style="font-size: 15px; "><%=r.if_fu %> </span>&nbsp;<span style="font-size: 15px;">￥<%=r.zong_price %></span>
+					</div>
+					&nbsp;<span style="font-size: 15px;"><%=r.order_time?new Date(r.order_time).toLocaleString():"" %></span>
+					<a class="a11" href="/freviewin" style="">评&nbsp;&nbsp;价</a>&nbsp;&nbsp;
+					<a class="a11 payy" href="/payin?id=<%=r.id %>" style="" data-x=''>付&nbsp;&nbsp;账</a>
+				</div>
+
+				<div class="temp_box">
+					<div class="geduan2"></div>
+					<div class="small_box">
+						<!--<a href="#" class="delc" data-id="<%= r.id%>"><img data-id="<%= r.id%>" class="delc" src="../../img/order/del.png" /></a>-->
+						<div class="tu">
+							<img src="<%= r.food_img%>" alt="" />
+						</div>
+						<div class="content">
+							<span class="p1" style="font-weight: 700;"><%=r.food_name%></span>
+							<span class="p2">份数：<%= r.nums %></span> <br />
+							<span class="p3" style="color: red; font-weight: 700;">￥
+								<%= r.food_price %>.00
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="youge"></div>
+				<% }) %>
+				<a class="a55" id="test2" style="">退&nbsp;&nbsp;订</a>
+
+				<div style="width: 100%;  height: 110px;"></div>
+				<!--<a class="a1" href="/tablein?id=<%=r[r.length-1].id %>" style="margin-bottom: 80px; display: inline-block;">订 桌</a>-->
+			</div>
+
+			<!--<div style="width: 100%;height: 20px;"></div>-->
+
+
+
+			<!--尾部-->
+			<div class="bottom" style="background-color: #fcfcfc; border: 1px solid #e7e7e7;">
+				<div class="bottom_first">
+					<img src="../../img/home/home_gray.png" alt="" />
+					<p>
+						<a href="/homein/f" style="color: #898989; opacity: 0.95;">首页</a>
+						<p>
+				</div>
+				<div class="bottom_second">
+					<img src="../../img/home/order.png" alt="" />
+					<p>
+						<a href="/order_successin/order" style="color: black; opacity: 0.95;">订单</a>
+					</p>
+				</div>
+				<div class="bottom_third">
+					<img src="../../img/home/my_gray.png" alt="" />
+					<p>
+						<a href="/myin/f" style="color: #898989; opacity: 0.95;">我的</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js "></script>
+		<script src="/layui/layui.all.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<!--<script src="../../js/mui.min.js"></script>-->
+		<script src="../../js/order_success.js"></script>
+		<script type="text/javascript">
+			//弹出一个页面层
+			$('#test2').on('click', function() {
+				layer.open({
+					type: 1,
+					area: ['600px', '360px'],
+					shadeClose: true, //点击遮罩关闭
+					content: '\<\div style="padding:20px;">取消订单拨打：13550086123\<\/div>'
+				});
+			});
+
+//			let pay = document.querySelectorAll('.pay');
+//			for(var i = 0; i < pay.length; i++) {
+//				pay[i].onclick = function(e) {
+//					//防止浏览器默认行为(W3C) 
+//					if(e && e.preventDefault) {
+//						e.preventDefault();
+//					}
+//					//IE中组织浏览器行为 
+//					else {
+//						window.event.returnValue = fale;
+//						return false;
+//					}
+//					layer.confirm('需付金额：', {
+//						btn: ['购买', '取消'] //按钮
+//					});
+//				}
+//			}
+		</script>
+
+	</body>
+
+</html>

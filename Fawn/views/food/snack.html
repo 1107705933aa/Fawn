@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/snack.css" />
+	</head>
+	<style type="text/css">
+		a {
+			display: block;
+		}
+	</style>
+
+	<body>
+
+		<div class="my_content">
+			<!--头部-->
+			<div class="header">
+				<div class="header_left">
+					<a href="/homein/f"><img src="../../img/home/back.png" alt="" /></a>
+				</div>
+				<div class="header_right">
+					<div class="mui_title" style="font-weight: 700; font-family: " STSong ";">— 小 · 吃 —</div>
+					<div class="mui_title_two" style="font-weight: 200;">Snack</div>
+				</div>
+			</div>
+
+			<!--中部-->
+			<!--菜单-->
+			<div class="menu_box">
+				<div class="food_menu" style="font-weight: 700;">
+					<a href="" ></a>
+					<a href="#menu11" class="a1">成都小吃</a>
+					<a href="#menu22" class="a2">炸鸡披萨</a>
+					<a href="#menu33" class="a3">澳洲小吃</a>
+					<a href="#menu44" class="a4">安徽小吃</a>
+					<a href="#menu55" class="a5">海南小吃</a>
+					<a href="#menu66" class="a6">广东小吃</a>
+				</div>
+			</div>
+
+			<!--大内容-->
+			<div class="content_box ">
+				<div class="food_content ">
+					<!--美味烧菜-->
+					<div id="menu11">
+						<div class="instruct">
+							<span style="font-weight: 700;">成都小吃  （6）</span>
+						</div>
+						<div id="menu1">
+							<div class="li_first ">
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[0].id %>"><img src="<%=r[0].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[0].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[1].id %>"><img src="<%=r[1].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[1].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[2].id %>"><img src="<%=r[2].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[2].food_name %></div></a>
+								</div>
+							</div>
+							<div class="li_second ">
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[3].id %>"><img src="<%=r[3].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[3].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[4].id %>"><img src="<%=r[4].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[4].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[5].id %>"><img src="<%=r[5].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[5].food_name %></div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div id="menu22">
+						<div class="instruct">
+							<span style="font-weight: 700;">炸鸡披萨  （6）</span>
+						</div>
+						<div id="menu1">
+							<div class="li_first ">
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[6].id %>"><img src="<%=r[6].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[6].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[7].id %>"><img src="<%=r[7].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[7].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[8].id %>"><img src="<%=r[8].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[8].food_name %></div></a>
+								</div>
+							</div>
+							<div class="li_second ">
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[9].id %>"><img src="<%=r[9].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[9].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[10].id %>"><img src="<%=r[10].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[10].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[11].id %>"><img src="<%=r[11].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[11].food_name %></div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div id="menu33">
+						<div class="instruct">
+							<span style="font-weight: 700;">澳洲小吃 （3）</span>
+						</div>
+						<div id="menu2">
+							<div class="li_first ">
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[12].id %>"><img src="<%=r[12].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[12].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[13].id %>"><img src="<%=r[13].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[13].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[14].id %>"><img src="<%=r[14].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[14].food_name %></div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div id="menu44">
+						<div class="instruct">
+							<span style="font-weight: 700;">安徽小吃 （6）</span>
+						</div>
+						<div id="menu1">
+							<div class="li_first ">
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[15].id %>"><img src="<%=r[15].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[15].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[16].id %>"><img src="<%=r[16].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[16].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[17].id %>"><img src="<%=r[17].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[17].food_name %></div></a>
+								</div>
+							</div>
+							<div class="li_second ">
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[18].id %>"><img src="<%=r[18].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[18].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[19].id %>"><img src="<%=r[19].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[19].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[20].id %>"><img src="<%=r[20].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[20].food_name %></div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div id="menu55">
+						<div class="instruct">
+							<span style="font-weight: 700;">海南小吃 （6）</span>
+						</div>
+						<div id="menu1">
+							<div class="li_first ">
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[21].id %>"><img src="<%=r[21].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[21].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[22].id %>"><img src="<%=r[22].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[22].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[23].id %>"><img src="<%=r[23].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[23].food_name %></div></a>
+								</div>
+							</div>
+							<div class="li_second ">
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[24].id %>"><img src="<%=r[24].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[24].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[25].id %>"><img src="<%=r[25].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[25].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[26].id %>"><img src="<%=r[26].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[26].food_name %></div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+					<div id="menu66">
+						<div class="instruct">
+							<span style="font-weight: 700;">广东小吃（3）</span>
+						</div>
+						<div id="menu2">
+							<div class="li_first ">
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[27].id %>"><img src="<%=r[27].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[27].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[28].id %>"><img src="<%=r[28].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[28].food_name %></div></a>
+								</div>
+								<div class="small_box ">
+									<a href="/snackin/query?id=<%=r[29].id %>"><img src="<%=r[29].food_pic %>" alt=" " />
+									<div class="breakfast_name "><%=r[29].food_name %></div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js "></script>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/snack.js"></script>
+		<script type="text/javascript ">
+			mui.init()
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,223 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+	list-style: none;
+}
+
+/*----------大盒子----------*/
+
+.my_content {
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+
+/*----------头部-----------*/
+
+.header {
+	width: 100%;
+	height: 55px;
+	display: flex;
+}
+
+.header_left {
+	display: left;
+	width: 20%;
+	height: 55px;
+}
+
+.header_left img {
+	width: 25px;
+	height: 25px;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+.header_right {
+	width: 80%;
+	height: 55px;
+	margin-right: 5%;
+}
+
+.mui_title {
+	width: 121px;
+	color: #5d3e2c;
+	font-size: 15px;
+	margin: 0 auto;
+	margin-top: 18px;
+
+}
+
+.mui_title_two {
+	width: 50px;
+    color: #5d3e2c;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 6px;
+    font-family: "YouYuan";
+    margin-left: 41%;
+}
+
+
+/*--------中部----------*/
+/*--------背景----------*/
+.my_bg {
+	width: 96%;
+	margin: 0 auto;
+	margin-top: 18px;
+	height: 180px;
+
+}
+
+.my_bg img {
+	width: 100%;
+	margin: 0 auto;
+	height: 180px;
+}
+
+/*----------登录-----------*/
+.my_log {
+	width: 88%;
+	height: 60px;
+	margin: 0 auto;
+	position: absolute;
+	left: 6%;
+	top: 34%;
+	border-radius: 8px;
+	background-color: #ffffff;
+	opacity: 0.89;
+	box-shadow:3px 3px 3px #dcdcdc;
+	display: flex;
+}
+
+.my_log img {
+	width: 40px;
+	height: 40px;
+	margin-left: 5%;
+	margin-top: 3%;
+}
+
+.my_log span {
+	font-size: 15px;
+	color: #fac017;
+	margin-left: 6%;
+	margin-top: 8%;
+}
+
+
+
+
+/*----------my菜单---------*/
+.my_menu {
+	width: 88%;
+	height: 180px;
+	margin: 0 auto;
+	margin-top: 65px;
+	background-color: white;
+	border-radius: 8px;
+	border-top: 1px solid #dcdcdc;
+	border-left: 1px solid #dcdcdc;
+	box-shadow:3px 3px 3px #dcdcdc;
+}
+
+.my_menu_first {
+	width: 100%;
+	height: 90px;
+	border-radius: 8px;
+	display: flex;
+}
+
+.my_menu_second {
+	width: 100%;
+	height: 90px;
+	border-radius: 8px;
+	display: flex;
+}
+
+.my_menu .samll_menu {
+	width: 33.333333333333333333333%;
+	height: 90px;
+	border-radius: 8px;
+	margin-left: 11%;
+	margin-top: 4%;
+}
+
+.my_menu img {
+	width: 35px;
+	height: 35px;
+	display: block;
+}
+
+.my_menu span {
+	font-size: 14px;
+	display: block;
+	margin-left: 4%;
+	margin-top: 9%;
+}
+
+
+/*----------尾部-----------*/
+.bottom {
+	background-color: #fafafa;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	bottom: 0px;
+	display: flex;
+}
+
+.bottom_first {
+	width: 9%;
+	height: 40px;
+	margin-top: 6px;
+	margin-left: 15%;
+}
+
+.bottom_second {
+	width: 9%;
+	height: 40px;
+	margin-left: 22.5%;
+	margin-top: 6px;
+}
+
+.bottom_third {
+	width: 9%;
+	height: 40px;
+	margin-left: 22.5%;
+	margin-top: 6px;
+}
+
+.bottom img:nth-child(1),.bottom img:nth-child(2) {
+	width: 22px;
+	height: 22px;
+	margin-left: 5px;
+}
+
+.bottom img:nth-child(3) {
+	width: 22px;
+	height: 22px;
+}
+
+
+.bottom p {
+	font-size: 10px;
+	margin-top: -5px;
+	margin-left: 5px;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    background-color: white;
+}

@@ -1,0 +1,128 @@
+/*---------默认-----------*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+	list-style: none;
+}
+
+.small_box a {
+	color: black;
+}
+
+html {
+	background-color: white;
+}
+
+
+/*---------大盒子---------*/
+.review_content {
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+
+/*---------头部------------*/
+
+.header {
+	position: absolute;
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	height: 68px;
+	display: flex;
+	background-color: white;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.header_left {
+	display: left;
+	width: 20%;
+	height: 55px;
+}
+
+.header_left img {
+	width: 25px;
+	height: 25px;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+.header_right {
+	width: 80%;
+	height: 55px;
+	margin-right: 8%;
+}
+
+.mui_title {
+	width: 121px;
+	color: #5d3e2c;
+	font-size: 15px;
+	margin: 0 auto;
+	margin-top: 18px;
+
+}
+
+.mui_title_two {
+	width: 50px;
+    color: #5d3e2c;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 6px;
+    font-family: "YouYuan";
+    margin-left: 35%;
+}
+
+.log_logo {
+	width: 96%;
+	height: 40px;
+	margin-left: 2%;
+	margin-top: 88px;
+}
+
+.login_box img {
+	width: 20px;
+	height: 20px;
+}
+
+.log_logo img {
+	width: 40px;
+	height: 40px;
+	margin-left: 45%;
+}
+
+/*-------中部-------*/
+.top_ {
+	margin-top: 0px;
+}
+
+.layui-badge-rim, .layui-colla-content, .layui-colla-item, .layui-collapse, .layui-elem-field, .layui-form-pane .layui-form-item[pane], .layui-form-pane .layui-form-label, .layui-input, .layui-layedit, .layui-layedit-tool, .layui-quote-nm, .layui-select, .layui-tab-bar, .layui-tab-card, .layui-tab-title, .layui-tab-title .layui-this:after, .layui-textarea {
+    border-color: white;
+}
+
+.layui-colla-title {
+    position: relative;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 15px 0 35px;
+    color: #333;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.layui-badge-rim, .layui-colla-content, .layui-colla-item, .layui-collapse, .layui-elem-field, .layui-form-pane .layui-form-item[pane], .layui-form-pane .layui-form-label, .layui-input, .layui-layedit, .layui-layedit-tool, .layui-quote-nm, .layui-select, .layui-tab-bar, .layui-tab-card, .layui-tab-title, .layui-tab-title .layui-this:after, .layui-textarea {
+    border-color: white;
+    border: 0;
+    background-color: white;
+}

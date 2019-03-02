@@ -1,0 +1,208 @@
+
+/*----------默认----------*/
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    background-color: white;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+	list-style: none;
+}
+
+
+/*----------大盒子----------*/
+
+.table_content {
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 999;
+}
+
+
+/*----------头部-----------*/
+
+.header {
+	width: 100%;
+	height: 55px;
+	display: flex;
+}
+
+.header_left {
+	display: left;
+	width: 20%;
+	height: 55px;
+}
+
+.header_left img {
+	width: 25px;
+	height: 25px;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+.header_right {
+	width: 80%;
+	height: 55px;
+	margin-right: 9%;
+}
+
+.mui_title {
+	width: 121px;
+	color: #5d3e2c;
+	font-size: 15px;
+	margin: 0 auto;
+	margin-top: 18px;
+
+}
+
+.mui_title_two {
+	width: 50px;
+    color: #5d3e2c;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 2px;
+    font-family: "YouYuan";
+    margin-left: 37%;
+}
+
+
+/*---------中部--------*/
+.zhong_content {
+	width: 92%;
+	height: 562px;
+	margin-left: 4%;
+	margin-top: 15px;
+	background-color: #F4F4F4;
+}
+
+.caidan {
+	width: 100%;
+	height: 40px;
+	background-color: #e1b15e;	
+	color: #825c4;
+	
+}
+
+.caidan .a1 {
+	float: left;
+	margin-left: 80px;
+	line-height: 40px;
+	font-size: 13px;
+	color: white;
+	display: block;
+	width: 33px;
+	height: 35px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.caidan .a2 {
+	float: right;
+	margin-right: 80px;
+	line-height: 40px;
+	font-size: 13px;
+	color: white;
+	display: block;
+	width: 33px;
+	height: 35px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+
+/*----------小组件----------*/
+
+ul li {
+	list-style: none;
+	margin-left: 7.5%;
+	margin-top: 11%;
+}
+
+ul {
+	display: flex;
+}
+
+.small_box {
+	width: 80px;
+    height: 80px;
+}
+
+.small_box img {
+	width: 75px;
+    height: 75px;
+    border-radius: 22px;
+}
+
+.small_box p {
+    /* text-align: center; */
+    color: black;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+/*----------表单-----------*/
+
+.biao_content {
+	background-color:rgba(0,0,0,0.3) ;
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 89%;
+	top: 11%;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 999999;
+}
+
+.biaodan {
+	width: 219px;
+    height: 246px;
+	background-color: white;
+	left: 75px;
+	top: 132px;
+	font-size: 13px;
+}
+
+
+
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+    line-height: 21px;
+    width: 83%;
+    height: 28px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    -webkit-user-select: text;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 3px;
+    outline: 0;
+    background-color: #fff;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    border: 1px solid #a57c5e;
+}
+
+input::-webkit-input-placeholder {
+         /* placeholder颜色  */
+         color: #a57c5e;
+         /* placeholder字体大小  */
+         font-size: 12px;
+         /* placeholder位置  */
+         /*text-align: right;*/
+     }

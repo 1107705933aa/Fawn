@@ -1,0 +1,163 @@
+/*---------默认-----------*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+	list-style: none;
+}
+
+.small_box a {
+	color: black;
+}
+
+html {
+	background-color: white;
+}
+
+
+/*---------大盒子---------*/
+.freview_content {
+	background-color: #FFFCF4;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551597720&di=cb58dc7c212de0ba5f23e3b1f56f683a&imgtype=jpg&er=1&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201510%2F11%2F20151011202329_fvJMV.thumb.700_0.jpeg');
+}
+
+.adduser {
+	background-color:#e2c59d !important ;
+}
+
+/*---------头部------------*/
+
+.header {
+	position: absolute;
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	height: 68px;
+	display: flex;
+	background-color: white;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.header_left {
+	display: left;
+	width: 20%;
+	height: 55px;
+}
+
+.header_left img {
+	width: 25px;
+	height: 25px;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+.header_right {
+	width: 80%;
+	height: 55px;
+	margin-right: 8%;
+}
+
+.mui_title {
+	width: 121px;
+	color: #5d3e2c;
+	font-size: 15px;
+	margin: 0 auto;
+	margin-top: 18px;
+
+}
+
+.mui_title_two {
+	width: 50px;
+    color: #5d3e2c;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 6px;
+    font-family: "YouYuan";
+    margin-left: 36%;
+}
+
+.log_logo {
+	width: 96%;
+	height: 40px;
+	margin-left: 2%;
+	margin-top: 88px;
+}
+
+.login_box img {
+	width: 20px;
+	height: 20px;
+}
+
+.log_logo img {
+	width: 40px;
+	height: 40px;
+	margin-left: 45%;
+}
+
+
+
+/*---------中部---------*/
+
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+    line-height: 21px;
+    width: 87%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    -webkit-user-select: text;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 3px;
+    outline: 0;
+    background-color: #fff;
+    -webkit-appearance: none;
+}
+
+.layui-form-select .layui-edge {
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    margin-top: -3px;
+    cursor: pointer;
+    border-width: 6px;
+    border-top-color: #c2c2c2;
+    border-top-style: solid;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+
+.layui-input, .layui-textarea {
+    display: block;
+    width: 87%;
+    height: 50%;
+    padding-left: 10px;
+}
+
+.layui-input-block {
+    margin-left: 93px;
+    min-height: 36px;
+}
+
+.layui-form-item {
+    margin-bottom: -1px;
+    clear: both;
+}
+
+
+.layui-form-item .layui-input-inline {
+    display: block;
+    float: none;
+    left: -3px;
+    width: auto;
+    margin: 0 0 10px 97px !important;
+}
+

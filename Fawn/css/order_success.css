@@ -1,0 +1,421 @@
+
+/*---------默认-----------*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+	list-style: none;
+}
+
+
+/*----------大盒子----------*/
+.success_content {
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+
+/*----------头部-----------*/
+
+.header {
+	width: 100%;
+	height: 55px;
+	display: flex;
+	position: fixed;
+	background-color: white;
+	z-index: 999999999999999999999999;
+}
+
+.header_left {
+	display: left;
+	width: 20%;
+	height: 55px;
+	margin-bottom: 20px;
+}
+
+.header_left img {
+	width: 25px;
+	height: 25px;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+.header_right {
+	width: 80%;
+	height: 55px;
+	margin-right: 9%;
+}
+
+.mui_title {
+	width: 121px;
+	color: #5d3e2c;
+	font-size: 15px;
+	margin: 0 auto;
+	margin-top: 18px;
+
+}
+
+.mui_title_two {
+	width: 50px;
+    color: #5d3e2c;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 6px;
+    font-family: "YouYuan";
+    margin-left: 35%;
+}
+
+/*----------中部----------*/
+.geduan {
+	width: 100%;
+	height: 10px;
+}
+
+.geduan2 {
+	width: 100%;
+	height: 10px;
+}
+
+.geduan3 {
+	width: 100%;
+	height: 13px;
+}
+
+.temp_box {
+	width: 88%;
+	margin-left: 6%;
+	height: 87px;
+	box-shadow: 0px 0px 1px 0px #dcdcdc, 
+	0px 0px 0px 0px #dcdcdc, 
+	0px 0px 0px 0px #dcdcdc, 
+	0px 0px 0px 0px #dcdcdc
+	;
+}
+
+.dingzhuo {
+    width: 88%;
+    margin-left: 6%;
+    height: 70px;
+    line-height: 34px;
+    box-shadow: 0px 0px 1px 0px #dcdcdc, 0px 0px 0px 0px #dcdcdc, 0px 0px 0px 0px #dcdcdc, 0px 0px 0px 0px #dcdcdc;
+    background-color: #ef6200;
+    opacity: 0.4;
+    color: white;
+    padding-top: 5px;
+    /* display: flex; */
+}
+
+.temp_box:last-child {
+	margin-bottom: 40px;
+}
+
+.temp_box:last-child {
+	margin-bottom: 26px;
+}
+
+.small_box {
+	width: 88%;
+	height: 60px;
+    margin-left: 1%;
+	display: flex;
+	position: relative;
+}
+
+.delc {
+	position: absolute;
+	left: 100%;
+	top: -2px;
+}
+
+.delc img {
+	width: 13px;
+	height: 13px;
+}
+
+
+.tu {
+	width: 30%;
+	height: 70px;
+}
+
+.tu img {
+	width: 80%;
+	height: 70px;
+	border-radius: 50px 50px;
+	margin-left: 10%;
+}
+
+.content {
+	width: 70%;
+	height: 60px;
+	line-height: 34px;
+}
+
+.p1 {
+	margin-top: 15px;
+	margin-left: 16px;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+.p2 {
+	float: right;
+	margin-right: -11px;
+	font-size: 12px;
+}
+
+.p3 {
+	margin-left: 15px;
+	font-size: 13px;
+}
+
+
+
+.a1 {
+    width: 19%;
+    height: 28px;
+    padding: 5px 9px;
+    letter-spacing: 4px;
+    background-color: #623e24;
+    color: white;
+    border-radius: 8px;
+    font-size: 17px;
+    opacity: 0.9;
+    text-align: center;
+    line-height: 28px;
+    padding-left: 5%;
+    float: left;
+    margin-left: 16%;
+    margin-top: -30px;
+}
+
+.a11 {
+    width: 10%;
+    height: 16px;
+    padding: 3px 8px;
+    letter-spacing: -1px;
+    border: 1.2px solid white;
+    opacity: 0.7;
+    color: white;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 18px;
+    float: right;
+    margin-right: 3%;
+    margin-top: 2px;
+}
+
+#jiezhang {
+	position: fixed;
+	bottom: 0px;
+}
+
+.a11:active {
+	color: white;ss
+}
+
+
+.a2 {
+	width: 20px;
+	height: 20px;
+	font-size: 10px;
+	padding: 4px 7px;
+	letter-spacing: 1px;
+	background-color: white;
+	color: #b58b8b;
+    border-radius: 8px;
+    border: 1px solid #b49b9b;
+    margin-right: 10px;
+}
+
+
+.a22 {
+	width: 20px;
+	height: 20px;
+	font-size: 10px;
+	padding: 4px 7px;
+	letter-spacing: 1px;
+	background-color: white;
+	color: #b58b8b;
+    border-radius: 8px;
+    border: 1px solid #b49b9b;
+    margin-right: 8px;
+}
+
+
+/*----------尾部-----------*/
+.bottom {
+	background-color: #fafafa;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	bottom: 0px;
+	display: flex;
+}
+
+.bottom_first {
+	width: 9%;
+	height: 40px;
+	margin-top: 6px;
+	margin-left: 15%;
+}
+
+.bottom_second {
+	width: 9%;
+	height: 40px;
+	margin-left: 22.5%;
+	margin-top: 6px;
+}
+
+.bottom_third {
+	width: 9%;
+	height: 40px;
+	margin-left: 22.5%;
+	margin-top: 6px;
+}
+
+.bottom img:nth-child(1),.bottom img:nth-child(2) {
+	width: 22px;
+	height: 22px;
+	margin-left: 5px;
+}
+
+.bottom img:nth-child(3) {
+	width: 22px;
+	height: 22px;
+}
+
+.bottom p {
+	font-size: 10px;
+	margin-top: 1px;
+	margin-left: 5px;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    background-color: white;
+}
+
+.layui-layer-dialog {
+    min-width: 200px !important;
+}
+
+
+.layui-layer-btn .layui-layer-btn0 {
+    border-color: #815637 !important;
+    background-color: #815637 !important;
+    color: #fff;
+    width: 25px;
+    height: 26px;
+    font-size: 12px;
+    border-radius: 4px !important;
+}
+.layui-layer-btn a {
+    height: 32px;
+    line-height: 28px;
+    margin: 0px 5px 0;
+    padding: 1px 15px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    color: #333;
+    border-radius: 4px !important;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dingwei {
+    float: right;
+    margin-right: 44px;
+    margin-top: -30px;
+    margin-bottom: 18px;
+}
+
+
+
+
+.layui-badge-rim, .layui-colla-content, .layui-colla-item, .layui-collapse, .layui-elem-field, .layui-form-pane .layui-form-item[pane], .layui-form-pane .layui-form-label, .layui-input, .layui-layedit, .layui-layedit-tool, .layui-quote-nm, .layui-select, .layui-tab-bar, .layui-tab-card, .layui-tab-title, .layui-tab-title .layui-this:after, .layui-textarea {
+    border-color: #e6e6e6;
+    border-bottom-color: #fff !important;
+    border-top-color: #fff !important;
+}
+
+.a55 {
+    display: block;
+    width: 82%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #dfd7d7 !important;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 10px;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 51px;
+    left: 7%;
+    color: white;
+    padding-left: 4%;
+}
+
+/*----------表单-----------*/
+
+.biao_content {
+	background-color:rgba(0,0,0,0.3) ;
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 89%;
+	top: 11%;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 999999;
+}
+
+.biaodan {
+	width: 219px;
+    height: 246px;
+	background-color: white;
+	left: 75px;
+	top: 132px;
+	font-size: 13px;
+}
+
+
+
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+    line-height: 21px;
+    width: 83%;
+    height: 28px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    -webkit-user-select: text;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 3px;
+    outline: 0;
+    background-color: #fff;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    border: 1px solid #a57c5e;
+}
+
+input::-webkit-input-placeholder {
+         /* placeholder颜色  */
+         color: #a57c5e;
+         /* placeholder字体大小  */
+         font-size: 12px;
+         /* placeholder位置  */
+         /*text-align: right;*/
+     }

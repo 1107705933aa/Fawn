@@ -1,0 +1,155 @@
+
+
+/*---------默认-----------*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+	list-style: none;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    background-color: #fafafa;
+}
+
+/*---------大盒子---------*/
+.register_content {
+	background-color: #fafafa;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+/*---------头部------------*/
+.header {
+	width: 100%;
+	height: 55px;
+	display: flex;
+}
+
+.header_left {
+	display: left;
+	width: 20%;
+	height: 55px;
+}
+
+.header_left img {
+	width: 25px;
+	height: 25px;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+
+.header_right {
+	width: 80%;
+	height: 55px;
+	margin-right: 15%;
+}
+
+.mui_title {
+	width: 121px;
+	color: #5d3e2c;
+	font-size: 15px;
+	margin: 0 auto;
+	margin-top: 18px;
+
+}
+
+.mui_title_two {
+	width: 50px;
+    color: #5d3e2c;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 6px;
+    font-family: "YouYuan";
+    margin-left: 41%;
+}
+
+.log_logo {
+	width: 96%;
+	height: 40px;
+	margin-left: 2%;
+	margin-top: 88px;
+}
+
+.login_box img {
+	width: 20px;
+	height: 20px;
+}
+
+.log_logo img {
+	width: 40px;
+	height: 40px;
+	margin-left: 45%;
+}
+
+/*----------注册----------*/
+.instruct {
+	width: 96%;
+	height: 30px;
+	margin-left: 2%;
+	margin-top: 22px;
+	background-color: white;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+	opacity: 0.5;
+}
+
+.register_box {
+	width: 96%;
+	height: 35px;
+	margin-left: 2%;
+	margin-top: 28px;
+	background-color: white;
+	opacity: 0.8;
+}
+
+.register_box  input {
+	width: 100%;
+	height: 35px;
+	border: 0;
+	opacity: 0.6;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+.agree {
+	margin-top: 15px;
+	margin-left: 3%;
+	font-size: 12px;
+	position: relative;
+}
+
+.agree span:nth-child {
+	position: absolute;
+	top: -2px;
+	left: 5%;
+}
+
+.color2 {
+	color: #ffd161;
+}
+
+.color1 {
+	color: #CCCCCC;
+}
+
+.regist {
+	width: 96%;
+	height: 35px;
+	margin-left: 2%;
+	margin-top: 10px;
+	background-color: #cccccc;
+}
+
+

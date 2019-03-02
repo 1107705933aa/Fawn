@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/wallet.css" />
+		<link rel="stylesheet" href="/layui/css/layui.css">
+	</head>
+
+	<body>
+		<div class="wallet_content">
+			<!--头部-->
+			<div class="header">
+				<div class="header_left">
+					<a href="javascript:history.go(-1)"><img src="../../img/home/back.png" alt="" /></a>
+				</div>
+				<div class="header_right">
+					<div class="mui_title" style="font-weight: 700; font-family: " STSong ";">— 钱 · 包 —</div>
+					<div class="mui_title_two" style="font-weight: 200;">Wallet</div>
+				</div>
+			</div>
+
+			<!--中部-->
+			<div class="money_top">
+				<div class="geduan3" style="width: 100%;height: 20px; background-color: white;"></div>
+				<div class="money">
+					<span class="span1">￥</span>
+					<span class="span2"><%=r[0].money %>.00</span>
+					<p>金额</p>
+				</div>
+			</div>
+			<div class="geduan1"></div>
+
+			<!--轮播图-->
+			<div class="big_box">
+				<div class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<!--支持循环，需要重复图片节点-->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#"><img style="width: 100%; height: 70px;" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=294041056,3379443133&fm=26&gp=0.jpg" /></a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="#"><img style="width: 100%; height: 70px;" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1586479958,2691861835&fm=26&gp=0.jpg" /></a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="#"><img style="width: 100%; height: 70px;" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2232007444,2699070151&fm=26&gp=0.jpg" /></a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="#"><img style="width: 100%; height: 70px;" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=946316937,2211679364&fm=26&gp=0.jpg" /></a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="#"><img style="width: 100%; height: 70px;" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=294041056,3379443133&fm=26&gp=0.jpg" /></a>
+						</div>
+						<!--支持循环，需要重复图片节点-->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#"><img style="width: 100%; height: 70px;" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1586479958,2691861835&fm=26&gp=0.jpg" /></a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator mui-text-right" style="margin: 0 auto;">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+			</div>
+			<div class="geduan2"></div>
+			
+			<div class="bottom">
+				<p class="p6">钱包服务</p>
+				<ul>
+					<li><a href="https://cd.028kuaidai.com/PCcd/?baidu-cdbdpc-cp29-71#cl5"><img src="../../img/my/jieqian.png" alt="" /><p>借钱</p></a></li>
+					<li><a href="https://www.51credit.com/"><img src="../../img/my/xinyong.png" alt="" /><p>信用卡</p></a></li>
+					<li><a href="https://www.yirencf.com/lp/431/5/?utm_source=bd-pc-ss&utm_medium=SEM_lender&utm_campaign=PCLCTY&utm_content=PCLCTY&utm_term=PCBDXH48320&utm_cparameters=baiduPC10&b_scene_zt=1"><img src="../../img/my/licai.png" alt="" /><p>理财</p></a></li>
+					<li><a href="http://fulibus.net/"><img src="../../img/my/fuli.png" alt="" /><p>福利社</p></a></li>
+					<li><a href="http://www.10086.cn/index/sc/index_280_280.html"><img src="../../img/my/chongzhi.png" alt="" /><p>手机充值</p></a></li>
+					<li><a href="https://gongyi.ifeng.com/"><img src="../../img/my/gongyi.png" alt="" /><p>公益</p></a></li>
+				</ul>
+			</div>
+
+		</div>
+		<script src="/layui/layui.all.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js "></script>
+		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/wallet.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+
+		<script type="text/javascript">
+			$(function() {
+				//显示搜索框样式
+				$('.search').click(function() {
+					$('.shelter').css('display', 'block');
+				})
+
+				//轮播图
+				//获得slider插件对象
+				var gallery = mui('.mui-slider');
+				gallery.slider({
+					interval: 3000 //自动轮播周期，若为0则不自动播放，默认为0；
+				});
+			})
+		</script>
+	</body>
+
+</html>
